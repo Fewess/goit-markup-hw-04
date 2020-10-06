@@ -34,6 +34,7 @@ img {
 .span-white{
   color: #FFFFFF;
 }
+
 /*=========HEADER==========*/
 
 .header {
@@ -78,14 +79,26 @@ img {
 .address-svg{
   margin-right: 10px;
 }
-    .address-svg:hover, .address-svg:focus{
-      fill: #2196F3
-    }
-    
-    .address-svg{
-      fill: #757575;
-    }
 
+.address-svg{
+  fill: #757575;
+}
+
+ .contact-mail-link:hover .address-svg{
+   fill: #2196F3;
+ }
+
+ .contact-tel-link:hover .address-svg{
+   fill: #2196F3;
+ }
+ 
+ .contact-mail-link:focus .address-svg{
+   fill: #2196F3;
+ }
+
+ .contact-tel-link:focus .address-svg{
+   fill: #2196F3;
+}
 
 .navigation-list-link {
   font-weight: 500;
@@ -206,6 +219,10 @@ border-radius: 0px 0px 4px 4px;
   margin-left: 24px;
 }
 
+
+.hero-list-item:hover, .hero-list-item:focus{
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
 
 /*========= ENDHERO=============*/
 
@@ -424,10 +441,10 @@ background-color: #fff;
     
   }
 
-  .social-list-item:hover{
+  .social-list-item:hover, .social-list-item:focus{
     background-color: #2196F3;
   }
-  .social-list-item:hover .social-list-svg{
+  .social-list-item:hover .social-list-svg, .social-list-item:focus .social-list-svg{
     fill: #fff;
   }
 }
@@ -448,19 +465,18 @@ background-color: #fff;
  margin-bottom: 94px;
 }
 
-.clients-list-item{
-  width: 170px;
-  height: 90px;
-  border: 1px solid;
-  border-color: #AFB1B8;
-  border-radius: 4%;
-}
+
 
 .clients-list-link{
   display: flex;
+  width: 170px;
+  height: 90px;
   justify-content: center;
   padding-top: 24px;
   padding-bottom: 24px;
+   border-radius: 4%;
+   border: 1px solid ;
+  border-color: #AFB1B8;
 }
 
 .clients-title{
@@ -478,13 +494,21 @@ color: #212121;
   fill: #AFB1B8;
 }
 
-.clients-list-link:hover{
+.clients-list-link:hover, .clients-list-link:focus{
   fill: #2196F3;
 }
 
-.clients-list-item:hover{
+.clients-list-link:hover {
   border-color: #2196F3;
 }
+
+.clients-list-link:focus {
+  border-color:#2196f3;
+}
+
+
+
+
 /* =================END CLIENTS========== */
 
 /*=========FOOTER=============*/
@@ -555,13 +579,16 @@ margin-top: 72px;
   justify-content: center;
   padding-top: 27%;
   padding-bottom: 27%;
+  border-radius: 50%;
 }
 
 .social-svg-dark{
   fill: #FFFFFF;
 }
 
-.social-item-dark:hover{
+.social-link-dark:hover,
+.social-link-dark:focus
+ {
   background-color: #2196F3;
 }
 
