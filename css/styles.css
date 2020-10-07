@@ -39,7 +39,7 @@ img {
 
 .header {
   padding-top: 24px;
-  padding-bottom: 25px;
+  /* padding-bottom: 25px; */
 }
 .header .container {
   display: flex;
@@ -138,6 +138,16 @@ img {
 
   color: #757575;
 }
+
+.header::after{
+  display: block;
+content: '';
+width: 1600px;
+height: 1px;
+background-color: #ECECEC;
+margin-top: 32px;
+}
+
 /*=========END HEADER==========*/
 /*=========HERO=============*/
 
@@ -245,6 +255,7 @@ border-radius: 0px 0px 4px 4px;
   padding-right: 15px;
   padding-left: 15px;
   text-align: center;
+  margin-top: 0;
 }
 .main-title {
   font-weight: 900;
